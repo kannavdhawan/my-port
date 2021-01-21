@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Hello.urls'
+ROOT_URLCONF = 'src.urls'
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 TEMPLATES = [
     {
@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Hello.wsgi.application'
+WSGI_APPLICATION = 'src.wsgi.application'
 
 
 # Database
