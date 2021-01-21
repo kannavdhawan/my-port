@@ -1,0 +1,311 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home |
+{% endblock title %}
+{% block style %}
+<style>
+li
+{
+    
+    text-align: justify;
+    text-decoration-style: wavy;
+
+}
+</style>
+{% endblock style %} 
+
+{% block body %}
+{% comment %} Container Images {% endcomment %}
+<div class="container-fluid my-5 px-0" >
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li>
+
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="static/img/2.jpg" class="d-block w-100" alt="..." height="500px" >
+      <div class="carousel-caption d-none d-md-block">
+    
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="static/img/fnc.png" class="d-block w-100" alt="..." height="500px" >
+      <div class="carousel-caption d-none d-md-block">
+        
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="static/img/ts.jpg" class="d-block w-100" alt="..." height="500px" >
+      <div class="carousel-caption d-none d-md-block">
+        
+      </div>
+    </div>
+   <div class="carousel-item" data-bs-interval="2000">
+      <img src="static/img/stocks.jpg" class="d-block w-100" alt="..." height="500px" >
+      <div class="carousel-caption d-none d-md-block">
+        
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+</div>
+
+{% comment %} Container albums {% endcomment %}
+
+<div class="container my-3">
+<h1 class="my-4 text-center"><em>See my Projects on GitHub</em></h1>
+
+    <hr class="featurette-divider">
+    <hr class="featurette-divider">
+
+
+<div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">"Fake News Challenge" - <span class="text-muted">A stance detection system.</span></h2>
+        <p class="lead"> 
+        <ul>
+        <li>
+        Pre-trained Bert classifier (Simple Transformers) was considered as the baseline. Various classical machine learning models viz. Gradient Boosting, Random Forest, Logistic Regression, XGBoost with hand features and additional features were employed.
+        </li><br>
+        <li>
+        Neural Networks viz. CNN, LSTM and Bidirectional LSTM with varying feature engineering techniques using different Pre-trained Glove and CBOW embeddings trained using Word2Vec were employed at different truncation lengths for the sequences.
+        </li><br>
+        <li>
+        Bidirectional LSTM’s outperformed in the Neural Network pipeline, thus an architecture consisting of separate Embedding and Bidirectional LSTM layers for both headline and body was constituted, a robust feature engineering with baseline features, TFIDF were used in the layers which finally provided us the state-ofthe art results with a score of 9460 and an accuracy of 81.19% on the competition set.
+        </li><br>
+        </ul>
+</p>
+<a href="https://github.com/kannavdhawan/Fake-News-Challenge" class="btn btn-primary active" role="button" align="center">Take me to the project..</a>
+
+
+      </div>
+    
+      <div class="col-md-5 my-auto">
+
+      <img src="static/img/fnc.png" class="d-block w-100" alt="..." height="500px" >
+
+      </div>
+    </div>
+
+<hr class="featurette-divider">
+
+
+
+<div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">"Stock Price Prediction" - <span class="text-muted">A predictive analytics LSTM model.</span></h2>
+        <p class="lead"> 
+        <ul>
+        <li>
+        Time series data obtained from the "Google Finance" was transformed into the form required by the Recurrent Neural Network(LSTM).
+        </li><br>
+        <li>
+        Last three days of data was transformed into the features and the next days open price was considered as the target label.
+        </li><br>
+        <li>
+        A LSTM model was developed to predict the price given the features.
+        </li><br>
+        <li>
+        A RMSE of 2.89 was achieved using a smaller feature set.
+        </li><br>
+        </ul>
+</p>
+<a href="https://github.com/kannavdhawan/Time-Series-Stocks-LSTM" class="btn btn-primary active" role="button" align="center">Take me to the project..</a>
+
+
+      </div>
+    
+      <div class="col-md-5 my-auto">
+
+      <img src="static/img/stocks.jpg" class="d-block w-100" alt="..." height="500px" >
+
+      </div>
+    </div>
+
+<hr class="featurette-divider">
+
+
+<div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">"Advanced Extractive and Abstractive Text Summarization" - <span class="text-muted"> A web Summarizer.</span></h2>
+        <p class="lead"> 
+        <ul>
+        <li>
+This work presented two pipelines viz. extractive and abstractive summarization for the task of automatic text summarization. The approach used for extractive summarization takes the input text, uses the word frequency as the feature for baseline and extended features like sentence length, intersectional n-grams for the improved system and then the summarization is performed using priority queue algorithm for the baseline and using rule-based algorithm for the extended features. Further, the TextRank based summarization is implemented followed by the ensemble model combining the improved model, TextRank model and the summa summarizer with variations on the similarity function of TextRank.
+
+        </li><br>
+
+
+        <li>
+For the abstractive summarization, the T-5 transformer and LSTM architecture using GloVe and FastText embeddings are implemented.
+        </li><br>
+        <li>
+Polarity based summary classification and the end to end online summarizer is developed using the best extractive model. Models are evaluated using the baseline precision metric for initial evaluation, manual linguistic quality evaluation and the Rouge based evaluation. For the extractive summarization, the implemented ensemble model outperformed the other models on precision whereas for the abstractive summarization, the baseline T-5 transformer outperformed the other implemented LSTM architectures on ROUGE scores.
+
+        </li></br>
+</ul>
+</p>
+<a href="https://github.com/kannavdhawan/Extractive-and-abstractive-Text-summarization" class="btn btn-primary active" role="button" align="center">Take me to the project..</a>
+
+
+      </div>
+    
+      <div class="col-md-5 my-auto">
+
+      <img src="static/img/ts.jpg" class="d-block w-100" alt="..." height="500px" >
+
+      </div>
+    </div>
+
+<hr class="featurette-divider">
+
+
+
+<div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">"Extensive NLP pipeline" - <span class="text-muted">Amazon Food Reviews Classification.</span></h2>
+        <p class="lead"> 
+        <ul>
+        <li>
+Data preprocessing and Data cleaning was performed involving tokenization (Sentence tokenization, Word tokenization), Filtering special characters and non ASCII words.
+Two datasets( with stopwords and withou stopwords) were created having Train-Test-Validation splits.
+
+        </li><br>
+
+
+        <li>
+Performance comparison and Classification using MNB(With and without stopwords): Models trained with stopwords performed better than models without stopwords by a small difference in Accuracy of +0.30 in {uni+bi} and a difference of +3.43% in {Bigrams} with an exception of {Unigrams} where the model without stopwords outperforms the one with stopwords by a negligible accuracy of +0.12%.
+        </li><br>
+        <li>
+Performance comparison and Classification using MNB(unigrams, bigrams, unigrams+bigrams): Accuracy(unigrams+bigrams)>Accuracy(bigrams)>Accuracy(unigrams) | with stopwords.
+{unigrams + bigrams} preserved more information than the others and making the feature vector larger in size as well, so with an increase in the accuracy, we are compromising with the space and time complexity.
+        </li></br>
+        <li>
+Word2vec Implementation was implemented to check the effect of window size and other parameters while identifying most similar words. A fully connected feed forward network was developed to understand the effect of
+<ul>
+<li>
+Activation functions (ReLU, tanh, sigmoid).</li>
+<li>L2-norm regularization</li>
+<li>Dropouts.</li>
+</ul>
+</p>
+<a href="https://github.com/kannavdhawan/NLP-pipeline-Amazon-Food-Reviews" class="btn btn-primary active" role="button" align="center">Take me to the project..</a>
+
+
+      </div>
+    
+      <div class="col-md-5 my-auto">
+
+      <img src="static/img/nlp_pipeline.png" class="d-block w-100" alt="..." height="500px" >
+
+      </div>
+    </div>
+
+<hr class="featurette-divider">
+
+
+
+<div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">"Data Analysis and Classification" - <span class="text-muted">Multiple Datasets and Techniques.</span></h2>
+        <p class="lead"> 
+        <ul>
+        <li>
+Basic concepts of Data cleaning and data transformation for the proper usage of datasets are highlighted.
+        </li><br>
+
+
+        <li>
+Concepts of Linear and Non-Linear dimensionality reduction are used.( PCA, LDA, Manifolds).
+
+       </li><br>
+        <li>
+Classifications are performed using the classical machine learning algorithms viz. KNN, Logistic regression, Decision Trees and others.
+        </li></br>
+        <li>
+IMDB reviews were classified using different embedding layers viz. GloVe, W2Vec etc. as the input layer to the convolutional neural network.
+</li></br>
+<li>CIFAR10 dataset was analyzed and a Multi layer perceptron as well as CNN with varying hyperparameters were developed.
+</li><br>
+
+<li>Implemented Classical algorithms viz. Support Vector Machines, K Nearest Neighbors, Decision Trees, Random Forests, Gradient Boosting, XGBoost, Naive Bayes, Logistic Regression for Fashion MNSIT classification.
+Achieved an accuracy of 92% using the classical models which was one of the highest in the competition.
+
+</li></br>
+<li>
+Developed a complete ML pipeline for the classification of the Fashion MNSIT dataset and reached an accuracy of 94%(Top 5% in the competition) using the Robust CNN architecture to tackle the problem of modified labels.
+Analyzed the performance of variations of
+<ul>
+<li>
+CNN</li>
+<li>Alexnet</li>
+<li>Lenet-55</li>
+ <li>Resnet</li>
+<li>VGG16</li>
+</ul>
+
+</li></br>
+
+<li>
+
+KNN, Decision Tree, Random Forest, Gradient Boosting and SVM were implemented on IRIS dataset and the effect of changing the hyper-parameters was analyzed rigorously using the produced results and the literature.
+</li></br>
+
+</ul>
+</p>
+<a href="https://github.com/kannavdhawan/Classical-ML-Fashion-MNSIT/blob/master/Analysis/Analysis_classical.pdf" class="btn btn-primary active" role="button" align="center">Fashion MNSIT | Classical Models</a>
+<a href="https://github.com/kannavdhawan/Neural-Networks-Fashion-MNSIT/blob/master/Analysis/Analysis_neural_networks.pdf" class="btn btn-primary active" role="button" align="center">Fashion MNSIT | Neural Networks</a>
+<a href="https://github.com/kannavdhawan/Dataset-analysis-and-classification" class="btn btn-primary active" role="button" align="center">Titanic</a>
+<a href="https://github.com/kannavdhawan/Classical-Models-Iris" class="btn btn-primary active" role="button" align="center">IRIS</a>
+<div class = "col-md-5 my-2">
+<a href="https://github.com/kannavdhawan/Imdb-Reviews-Classification" class="btn btn-primary active" role="button" align="center">IMDB</a>
+<a href="https://github.com/kannavdhawan/Minor-Data-explorations" class="btn btn-primary active" role="button" align="center">911</a>
+</div>
+
+      </div>
+    
+      <div class="col-md-5 my-auto">
+
+      <img src="static/img/ml.jpg" class="d-block w-100" alt="..." height="500px" >
+
+      </div>
+    </div>
+
+<hr class="featurette-divider">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+{% endblock body %}
