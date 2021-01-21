@@ -23,34 +23,34 @@ li
     <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
     <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
     <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
-    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li>
+    {% comment %} <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li> {% endcomment %}
 
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="static/img/2.jpg" class="d-block w-100" alt="..." height="500px" >
+    <div class="carousel-item active" data-bs-interval="1000">
+     <a href="https://github.com/kannavdhawan/Fake-News-Challenge"> <img src="static/img/fnc.png" class="d-block w-100 " alt="..." height="500px" ></a>
       <div class="carousel-caption d-none d-md-block">
     
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="static/img/fnc.png" class="d-block w-100" alt="..." height="500px" >
+     <a href = "https://github.com/kannavdhawan/Extractive-and-abstractive-Text-summarization"><img src="static/img/ts.jpg" class="d-block w-100" alt="..." height="500px" ></a>
       <div class="carousel-caption d-none d-md-block">
         
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="static/img/ts.jpg" class="d-block w-100" alt="..." height="500px" >
+     <a href="https://github.com/kannavdhawan/Time-Series-Stocks-LSTM" > <img src="static/img/stocks.jpg" class="d-block w-100" alt="..." height="500px" ></a>
       <div class="carousel-caption d-none d-md-block">
         
       </div>
     </div>
-   <div class="carousel-item" data-bs-interval="2000">
+   {% comment %} <div class="carousel-item" data-bs-interval="2000">
       <img src="static/img/stocks.jpg" class="d-block w-100" alt="..." height="500px" >
       <div class="carousel-caption d-none d-md-block">
         
       </div>
-    </div>
+    </div> {% endcomment %}
   </div>
   <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -66,6 +66,7 @@ li
 {% comment %} Container albums {% endcomment %}
 
 <div class="container my-3">
+<div class="new-shape">
 <h1 class="my-4 text-center"><em>See my Projects on GitHub</em></h1>
 
     <hr class="featurette-divider">
@@ -95,7 +96,7 @@ li
     
       <div class="col-md-5 my-auto">
 
-      <img src="static/img/fnc.png" class="d-block w-100" alt="..." height="500px" >
+      <img src="static/img/fnc.png" class="d-block w-100 rounded" alt="..." height="500px" >
 
       </div>
     </div>
@@ -130,7 +131,7 @@ li
     
       <div class="col-md-5 my-auto">
 
-      <img src="static/img/stocks.jpg" class="d-block w-100" alt="..." height="500px" >
+      <img src="static/img/stocks.jpg" class="d-block w-100 rounded" alt="..." height="500px" >
 
       </div>
     </div>
@@ -165,7 +166,7 @@ Polarity based summary classification and the end to end online summarizer is de
     
       <div class="col-md-5 my-auto">
 
-      <img src="static/img/ts.jpg" class="d-block w-100" alt="..." height="500px" >
+      <img src="static/img/ts.jpg" class="d-block w-100 rounded" alt="..." height="500px" >
 
       </div>
     </div>
@@ -209,7 +210,7 @@ Activation functions (ReLU, tanh, sigmoid).</li>
     
       <div class="col-md-5 my-auto">
 
-      <img src="static/img/nlp_pipeline.png" class="d-block w-100" alt="..." height="500px" >
+      <img src="static/img/nlp_pipeline.png" class="d-block w-100 rounded" alt="..." height="500px" >
 
       </div>
     </div>
@@ -279,7 +280,7 @@ KNN, Decision Tree, Random Forest, Gradient Boosting and SVM were implemented on
     
       <div class="col-md-5 my-auto">
 
-      <img src="static/img/ml.jpg" class="d-block w-100" alt="..." height="500px" >
+      <img src="static/img/ml.jpg" class="d-block w-100 rounded" alt="..." height="500px" >
 
       </div>
     </div>

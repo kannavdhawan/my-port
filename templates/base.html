@@ -13,7 +13,7 @@
     {% block style %}
     {% endblock style %}
     <style>
-    
+
     
       .navbar-nav {
           float:none;
@@ -45,16 +45,16 @@
           {% comment %} padding-left: -40px; {% endcomment %}
           padding-right:160px;
       }
-      body{
+      {% comment %} body{
 background-color:  #e6fff2;
-      }
+      } {% endcomment %}
       
     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Kannav Dhawan</a>
+    {% comment %} <a class="navbar-brand" href="#">Kannav Dhawan</a> {% endcomment %}
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -63,9 +63,9 @@ background-color:  #e6fff2;
         <li class="nav-item">
           <a class="nav-link" href="/">Home</a>
         </li>
-        <li class="nav-item">
+        {% comment %} <li class="nav-item">
           <a class="nav-link" href="/projects">Projects</a>
-        </li>
+        </li> {% endcomment %}
         <li class="nav-item">
           <a class="nav-link" href="/about">About</a>
         </li>
@@ -99,5 +99,12 @@ background-color:  #e6fff2;
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     -->
+
+
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2021 Kannav Dhawan, Project Portfolio. · <a href="/contact">Contact</a> · <a href="https://www.linkedin.com/in/kannavdhawan">LinkedIn</a></p>
+  </footer>
+
   </body>
 </html>

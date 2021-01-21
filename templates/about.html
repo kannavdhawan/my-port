@@ -2,6 +2,87 @@
 {% block title %}
 About | 
 {% endblock title %}
+
+{% block style %}
+<style>
+.cv {
+  text-align:center;
+  width:100%;
+}
+iframe{
+  width: 800px;
+}
+
+
+.profile {
+    width: 30%;
+    float:right;
+}
+p
+{
+text-align:justify;
+}
+
+</style>
+{% endblock style %}
+
+
 {% block body %}
-This is block about.
+
+
+<div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">
+     <span class="font-weight-bold">Kannav</span>Dhawan
+    </h1>
+    <hr class="featurette-divider">
+
+     <p class="desc"><em>Python and Web Developer. Data Scientist. Equities Investor. Entrepreneur <a href="https://www.migrateboard.com">@ MigrateBoard</a></em></p>
+  <hr class="featurette-divider">
+
+  </header>
+
+
+  <article>    
+    <div class="profile float-right">
+        <img class="img-fluid z-depth-1 rounded" width = "230px" height = "230px" src="/static/img/kannav.png">
+    </div>
+    
+
+    <div class="clearfix">
+     <p>I graduated with my Master of Engineering in Computer Engineering from University of Waterloo with focus on Machine learning, Software development where I have done research work in Text analytics and Cloud computing, designed scalable architectures and developed the end to end operating models in multiple projects.
+     </p>
+     <p>
+     
+     Prior to this, I was working with two other professional IT service providers. 
+Firstly, I was an intern at Times Internet as a Channel Accounts associate for a period of 5 months which is one of the largest ecommerce solution providers where I was responsible for channel partner acquisitions and providing the end to end ecommerce solutions to their end clients by effectively designing, developing and integrating the required technology based business solutions. 
+</p>
+
+<p>
+I was also working as systems engineer trainee at Infosys limited where I developed breakthrough machine learning project which is still being used by the company internally.
+</p>
+<p>
+In addition to this, When I was enrolled in Bachelor of Computer Science, I negotiated a successful collaborative partnership with big real estate service providers of the region and founded a Real estate web portal. 
+
+During that time, I leveraged my data science and web development skills to build the website and target the right audience across different verticals which finally led to more investors funding the business and the business grew exponentially.
+
+</p>
+
+<p>
+My real strength is my ability to understand what the client wants and then work collaboratively across all the verticals to provide the best and scalable solution to the client and implement it using the optimal technology stack. 
+</p>
+<p>
+I look forward to connecting over email at k4dhawan@uwaterloo.ca or directly by phone @ +1-226-899-4733 and discuss with you about my skills and answer any of the questions. Please take a moment to look at my enclosed resume, LinkedIn and GitHub.
+</p>
+    </div>
+</article>
+  <hr class="featurette-divider">
+
+  <hr class="featurette-divider">
+
+<div class="cv">
+<iframe src="static/img/Kannav Dhawan.pdf" width="500" height="700"> 
+<div>
 {% endblock body %}
